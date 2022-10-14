@@ -61,7 +61,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .visually-hidden {
@@ -866,8 +866,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   color: #afb1b8;
   border-radius: 50%;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red; */
+  /* outline-offset: -2px; */
 
   /* значення властивості, для якої буде здійснено плавний перехід, 
   за заданий час якщо не встановити властивості переходу, то застосується all */
@@ -915,7 +915,9 @@ img {
 }
 
 /*  Footer 3-й блок  */
-
+.footer-form {
+  margin-left: 40px;
+}
 .form-title {
   font-family: var(--main-font);
   font-weight: 700;
@@ -1003,8 +1005,8 @@ img {
   background-color: #ffffff;
   color: #afb1b8;
   border-radius: 50%;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 
   /* значення властивості, для якої буде здійснено плавний перехід, 
   за заданий час якщо не встановити властивості переходу, то застосується all */
@@ -1031,8 +1033,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   border-radius: 50%;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 
   /* значення властивості, для якої буде здійснено плавний перехід, 
   за заданий час якщо не встановити властивості переходу, то застосується all */
@@ -1119,7 +1121,7 @@ img {
   left: 50%;
   width: 528px;
   height: 581px;
-  padding: 50px 30px;
+  padding: 40px 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1149,6 +1151,8 @@ img {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: #000000;
+  transition-duration: 2500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -1197,14 +1201,14 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   margin-bottom: 10px;
   cursor: pointer;
   padding-left: 40px;
 }
 .modal-form-icon {
   position: absolute;
-  left: 20px;
+  left: 10px;
   bottom: 20px;
 }
 .modal-form-textarea {
@@ -1212,7 +1216,7 @@ img {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   /* margin-right: 40px; */
   padding-left: 15px;
   padding-top: 10px;
@@ -1233,7 +1237,7 @@ img {
   left: 77px;
   bottom: 90px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   font-family: var(--main-font);
   font-style: normal;
@@ -1243,6 +1247,7 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   user-select: none;
+  cursor: pointer;
 }
 .checkbox-text {
   color: var(--accent-txt-cl);
@@ -1261,6 +1266,7 @@ img {
   height: 16px;
   border: 2px solid #212121;
   border-radius: 2px;
+  cursor: pointer;
 }
 .checkbox:checked + .icon {
   background-color: #2196f3;
@@ -1270,6 +1276,14 @@ img {
   background-origin: border-box;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:focus + .icon {
+  border-color: #2196f3;
+}
+
+.checkbox:checked ~ .checkbox-title {
+  color: #188ce8;
 }
 .checkbox {
   position: absolute;
@@ -1282,19 +1296,20 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .modal-form-button {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  /* position: absolute; */
+  /* left: 0;
+  bottom: 0; */
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-left: 164px;
-  margin-right: 164px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 40px;
   /* margin-top: 30px; */
   width: 200px;
