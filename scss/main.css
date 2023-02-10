@@ -160,15 +160,21 @@ img {
   border-radius: 4px;
   padding: 40px 40px;
 }
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
 @media screen and (max-width: 480px) {
   .modal {
     width: 450px;
     min-height: 609px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .modal {
-    width: 450px;
+    width: 300px;
     min-height: 609px;
   }
 }
@@ -268,16 +274,22 @@ img {
   padding-left: 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 768px) {
+  .modal-form-input {
+    width: 370px;
+    height: 40px;
+  }
+}
 @media screen and (max-width: 480px) {
   .modal-form-input {
     width: 370px;
     height: 40px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .modal-form-input {
-    width: 370px;
-    height: 40px;
+    width: 100%;
+    height: 30px;
   }
 }
 
@@ -327,7 +339,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-form-input:focus::-moz-placeholder {
   position: absolute;
   color: #757575;
@@ -335,7 +346,6 @@ img {
   left: 40px;
   bottom: 10px;
 }
-
 .modal-form-input:focus::placeholder {
   position: absolute;
   color: #757575;
@@ -348,6 +358,11 @@ img {
   position: absolute;
   left: 10px;
   bottom: 20px;
+}
+@media screen and (max-width: 428px) {
+  .modal-form-icon {
+    bottom: 15px;
+  }
 }
 
 /* .modal-form-input-coment {
@@ -372,15 +387,21 @@ img {
   resize: none;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .modal-form-textarea {
+    width: 370px;
+    height: 120px;
+  }
+}
 @media screen and (max-width: 480px) {
   .modal-form-textarea {
     width: 370px;
     height: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .modal-form-textarea {
-    width: 370px;
+    width: 100%;
     height: 120px;
   }
 }
@@ -415,6 +436,17 @@ img {
           user-select: none;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .checkbox-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.01em;
+    left: 70px;
+    bottom: 110px;
+  }
+}
 @media screen and (max-width: 480px) {
   .checkbox-title {
     font-style: normal;
@@ -426,15 +458,15 @@ img {
     bottom: 110px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .checkbox-title {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.1666666667;
     letter-spacing: 0.01em;
-    left: 70px;
-    bottom: 110px;
+    left: 33px;
+    bottom: 105px;
   }
 }
 
@@ -461,6 +493,14 @@ img {
     text-decoration-line: underline;
   }
 }
+@media screen and (max-width: 428px) {
+  .checkbox-text {
+    font-size: 10px;
+    line-height: 1.1666666667;
+    text-decoration-line: underline;
+    text-align: center;
+  }
+}
 
 .icon {
   display: inline-block;
@@ -484,6 +524,13 @@ img {
     left: 40px;
     width: 16px;
     height: 15px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .icon {
+    width: 16px;
+    height: 15px;
+    left: 30px;
   }
 }
 
@@ -575,6 +622,11 @@ img {
     margin-left: 120px;
   }
 }
+@media screen and (max-width: 428px) {
+  .modal-form-button {
+    margin-left: 50px;
+  }
+}
 
 .modal-form-btn-txt {
   /* position: absolute; */
@@ -662,6 +714,13 @@ img {
 .form__input:hover, .form__input:focus {
   border-color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  .form__input {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+}
 @media screen and (max-width: 480px) {
   .form__input {
     margin-bottom: 20px;
@@ -670,11 +729,10 @@ img {
     height: 50px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .form__input {
-    width: 450px;
+    width: 90%;
     height: 50px;
-    margin-bottom: 20px;
   }
 }
 
@@ -790,6 +848,12 @@ img {
 }
 .menu-overlay.is-open .menu-container {
   transform: translateX(0);
+}
+@media screen and (max-width: 428px) {
+  .menu-container {
+    max-width: 428px;
+    height: 100%;
+  }
 }
 
 .mobile-list-contacts {
@@ -946,11 +1010,6 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .header__nav {
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 768px) {
   .header__nav {
     margin-right: auto;
   }
@@ -1155,13 +1214,13 @@ img {
     height: 84px;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
   .hero-title {
     font-style: normal;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.6153846154;
-    width: 360px;
-    height: 84px;
+    width: 320px;
+    height: 60px;
   }
 }
 
@@ -1197,6 +1256,12 @@ img {
   padding-top: 94px;
 }
 
+@media screen and (min-width: 428px) {
+  .about__container {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+}
 @media screen and (max-width: 480px) {
   .about__container {
     padding: 0;
@@ -1255,6 +1320,14 @@ img {
     margin: 0;
   }
 }
+@media screen and (max-width: 428px) {
+  .about-icons__item {
+    width: 95%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .about-list {
   display: flex;
@@ -1301,7 +1374,6 @@ img {
     display: none;
   }
 }
-
 .about__mobile-subtitle {
   font-family: var(--main-font);
   font-style: normal;
@@ -1319,6 +1391,11 @@ img {
     text-align: left;
   }
 }
+@media screen and (max-width: 428px) {
+  .about__mobile-subtitle {
+    text-align: center;
+  }
+}
 
 .about__mobile-subtitle-text {
   font-family: var(--main-font);
@@ -1332,6 +1409,12 @@ img {
 @media screen and (min-width: 768px) {
   .about__mobile-subtitle-text {
     width: 354px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .about__mobile-subtitle-text {
+    width: 95%;
+    text-align: center;
   }
 }
 
@@ -1511,6 +1594,13 @@ img {
     width: 450px;
   }
 }
+@media screen and (max-width: 428px) {
+  .team-list {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 
 .team__item {
   width: 270px;
@@ -1530,6 +1620,13 @@ img {
   .team__item {
     width: 450px;
     height: 622px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .team__item {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1693,6 +1790,13 @@ img {
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-basis: calc(50% - 30px);
+    margin: 0;
+  }
+}
+@media screen and (max-width: 428px) {
+  .clients-list {
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0;
   }
 }
