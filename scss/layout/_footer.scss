@@ -10,10 +10,25 @@
   // gap: 70px;
   grid-column-gap: 70px;
 
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
 
     // column-gap: 165px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
     padding-left: 0;
     padding-right: 0;
   }
@@ -35,6 +50,10 @@
     margin-bottom: 0;
     text-align: center;
   }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 .footer-logo__img {
   margin-bottom: 20px;
@@ -42,6 +61,12 @@
   @media screen and (max-width: 768px) {
     margin-left: 75px;
     // margin-right: auto;
+    text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     text-align: center;
   }
   @media screen and (max-width: 480px) {
@@ -83,10 +108,19 @@
 .footer-socials {
   margin-left: 0px;
 
+  @media screen and (max-width: 1199px) {
+    margin-left: 100px;
+    text-align: center;
+    gap: 0;
+  }
+
   @media screen and (max-width: 768px) {
     margin-left: 100px;
     text-align: center;
     gap: 0;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: 0px;
   }
   @media screen and (max-width: 480px) {
     margin-left: 0px;
@@ -116,6 +150,9 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (max-width: 480px) {
     margin-bottom: 60px;
@@ -148,10 +185,19 @@
 }
 .address {
   font-style: normal;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-left: 76px;
+    margin-bottom: 60px;
+  }
   @media screen and (max-width: 768px) {
     text-align: center;
     margin-left: 76px;
     margin-bottom: 60px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: 0px;
   }
   @media screen and (max-width: 480px) {
     margin-left: 0px;

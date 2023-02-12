@@ -2,17 +2,32 @@
   padding-top: 94px;
 }
 .about__container {
+  padding-left: 15px;
+  padding-right: 15px;
+
   @media screen and (min-width: 428px) {
-    padding: 0;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 60px;
   }
   @media screen and (max-width: 480px) {
-    padding: 0;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 60px;
   }
-  @media screen and (max-width: 768px) {
-    padding: 0;
+  @media screen and (max-width: 767px) {
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    // padding: 0;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 /* Icons  */
@@ -20,14 +35,23 @@
   display: flex;
   gap: 30px;
   align-items: center;
+
   justify-content: space-around;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   @media screen and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
   @media screen and (max-width: 480px) {
     display: flex;
   }
@@ -42,6 +66,17 @@
   margin-bottom: 30px;
   border-radius: 4px;
 
+  @media screen and (max-width: 1199px) {
+    width: 354px;
+
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (max-width: 768px) {
     // width: calc((100% - 30px) / 2);
     width: 354px;
@@ -51,6 +86,10 @@
     flex-direction: column;
     gap: 30px;
     // justify-content: space-between;
+  }
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin: 0;
   }
   @media screen and (max-width: 480px) {
     width: 450px;
@@ -67,8 +106,10 @@
 .about-list {
   display: flex;
   gap: 30px;
+  text-align: left;
+  justify-content: space-around;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -137,6 +178,15 @@
   @media screen and (min-width: 768px) {
     width: 354px;
   }
+
+  @media screen and (max-width: 767px) {
+    width: 95%;
+    text-align: center;
+  }
+  @media screen and (max-width: 480px) {
+    text-align: left;
+    width: 100%;
+  }
   @media screen and (max-width: 428px) {
     width: 95%;
     text-align: center;
@@ -152,8 +202,15 @@
   @media screen and (min-width: 1199px) {
     display: none;
   }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (max-width: 480px) {
     display: none;
+  }
+  @media screen and (max-width: 1100px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .about__tablet-subtitle {
